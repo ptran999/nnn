@@ -1,0 +1,59 @@
+<!--
+ * Title: sign-in.component.html
+ * Author: Professor Krasso
+ * Modified By: Phuong Tran
+ * Date: 07/02/2024
+ * Sources: BCRS Starter Project: https://github.com/buwebdev/web-450/tree/master/starter-projects/bcrs
+-->
+
+<!-- Container with background image for the login page. -->
+<div class="background-image">
+  <!-- Container for the login form. -->
+  <div class="login-container">
+    <!-- Card for the login form. -->
+    <div class="login-card">
+      <!-- Title for the login card. -->
+      <h1 class="login-title">Sign-In to BCRS</h1>
+
+      <!-- Form for user sign-in -->
+      <form >
+
+        <!-- Email Field -->
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Email Address"
+            formControlName="email"
+          />
+          <label for="email">Email Address</label>
+          <div>
+            Enter a valid email address.
+          </div>
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            formControlName="password"
+        />
+          <label for="password">Password</label>
+          <div> Password is required.</div>
+        </div>
+
+        <!-- Form submission button -->
+        <button class="btn btn-border  btn-large"  type="submit">Sign In</button>
+        <div class="sign-up">Don't have an account?
+          <a routerLink="/security/register">Create One</a>
+        </div>
+        <div class="rtnHome">
+          <a routerLink="/">Return to Home</a>
+        </div>
+      </form>
+    </div>
+  </div>
